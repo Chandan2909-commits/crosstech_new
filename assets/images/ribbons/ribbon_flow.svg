@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" fill="none">
+  <defs>
+    <!-- Sky Blue to Plush Peach Main Gradient -->
+    <linearGradient id="flowGrad1" x1="0%" y1="20%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#7BB2DE" stop-opacity="0.95"/>
+      <stop offset="25%" stop-color="#C5E1F6" stop-opacity="0.98"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="75%" stop-color="#F8CAD8" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#F5A384" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Underside Shadow Gradient (Reverse Fold) -->
+    <linearGradient id="flowUnderside1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5591C5" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#B8738D" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#E18BA7" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <linearGradient id="flowGrad2" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#F8CAD8" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#F5B895" stop-opacity="0.98"/>
+      <stop offset="70%" stop-color="#FFF2EC" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#A8D5F2" stop-opacity="0.92"/>
+    </linearGradient>
+
+    <!-- Soft Ambient Glow Filter -->
+    <filter id="ribbonShadow" x="-15%" y="-25%" width="130%" height="160%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#7BB2DE" flood-opacity="0.25"/>
+      <feDropShadow dx="0" dy="28" stdDeviation="32" flood-color="#F8CAD8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#ribbonShadow)">
+    <!-- Underside Back Loop -->
+    <path d="M 440,210 C 510,260 590,260 660,200 L 675,235 C 595,305 500,305 425,245 Z" fill="url(#flowUnderside1)"/>
+
+    <!-- Front Left Wave (Sky Blue Dominant) -->
+    <path d="M 40,260 C 180,90 320,110 440,210 L 425,245 C 310,155 190,135 60,300 Z" fill="url(#flowGrad1)"/>
+    
+    <!-- Specular Highlight Line on Left Wave -->
+    <path d="M 50,278 C 185,115 315,130 432,228" stroke="rgba(255,255,255,0.7)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Front Right Wave (Peach & Coral Dominant) -->
+    <path d="M 660,200 C 760,110 920,90 1140,230 L 1120,270 C 910,135 770,155 675,235 Z" fill="url(#flowGrad2)"/>
+
+    <!-- Specular Highlight Line on Right Wave -->
+    <path d="M 670,218 C 765,132 915,112 1130,250" stroke="rgba(255,255,255,0.65)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

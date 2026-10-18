@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none">
+  <defs>
+    <linearGradient id="twistGradA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C5E1F6" stop-opacity="0.95"/>
+      <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.98"/>
+      <stop offset="70%" stop-color="#F8CAD8" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#F5A384" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <linearGradient id="twistGradB" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7BB2DE" stop-opacity="0.92"/>
+      <stop offset="50%" stop-color="#E4E0FB" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#E18BA7" stop-opacity="0.92"/>
+    </linearGradient>
+
+    <linearGradient id="twistShadowGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5591C5" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#B8738D" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <filter id="twistShadow" x="-20%" y="-20%" width="140%" height="150%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#7BB2DE" flood-opacity="0.3"/>
+      <feDropShadow dx="0" dy="32" stdDeviation="36" flood-color="#F8CAD8" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#twistShadow)">
+    <!-- Back Loop Layer -->
+    <path d="M 170,300 C 120,200 180,110 290,130 C 370,145 420,220 460,300 L 415,325 C 380,255 345,185 280,175 C 205,160 165,225 205,300 Z" fill="url(#twistGradB)"/>
+    
+    <!-- Under Fold Depth -->
+    <path d="M 205,300 C 230,345 270,390 320,410 L 305,450 C 245,430 200,375 170,325 Z" fill="url(#twistShadowGrad)"/>
+
+    <!-- Front Crossing Loop -->
+    <path d="M 460,300 C 510,400 440,490 320,470 C 240,455 190,380 150,300 L 195,275 C 230,345 265,415 330,425 C 415,440 455,370 415,300 Z" fill="url(#twistGradA)"/>
+
+    <!-- Luminous Edge Accent Paths -->
+    <path d="M 180,285 C 220,360 260,420 330,430 C 405,440 440,380 405,310" stroke="rgba(255,255,255,0.75)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 425,315 C 385,240 345,180 280,170 C 210,160 175,220 210,290" stroke="rgba(255,255,255,0.6)" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

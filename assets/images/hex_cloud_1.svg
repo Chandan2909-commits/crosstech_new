@@ -1,0 +1,29 @@
+<svg viewBox="0 0 500 500" class="hex-cloud-svg hex-cloud-1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hex-cloud-1-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C5E1F6" stop-opacity="0.8" />
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#F8CAD8" stop-opacity="0.8" />
+    </linearGradient>
+    <filter id="hex-cloud-1-glow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+    </filter>
+  </defs>
+  <g filter="url(#hex-cloud-1-glow)">
+    <polygon points="395,250 322.5,375.6 177.5,375.6 105,250 177.5,124.4 322.5,124.4" fill="url(#hex-cloud-1-grad)" opacity="0.88" />
+    <circle cx="395" cy="250" r="75" fill="url(#hex-cloud-1-grad)" opacity="0.75" />
+    <circle cx="369.3" cy="318.9" r="61.5" fill="url(#hex-cloud-1-grad)" opacity="0.70" />
+    <circle cx="322.5" cy="375.6" r="75" fill="url(#hex-cloud-1-grad)" opacity="0.75" />
+    <circle cx="250" cy="387.8" r="61.5" fill="url(#hex-cloud-1-grad)" opacity="0.70" />
+    <circle cx="177.5" cy="375.6" r="75" fill="url(#hex-cloud-1-grad)" opacity="0.75" />
+    <circle cx="130.7" cy="318.9" r="61.5" fill="url(#hex-cloud-1-grad)" opacity="0.70" />
+    <circle cx="105" cy="250" r="75" fill="url(#hex-cloud-1-grad)" opacity="0.75" />
+    <circle cx="130.7" cy="181.1" r="61.5" fill="url(#hex-cloud-1-grad)" opacity="0.70" />
+    <circle cx="177.5" cy="124.4" r="75" fill="url(#hex-cloud-1-grad)" opacity="0.75" />
+    <circle cx="250" cy="112.3" r="61.5" fill="url(#hex-cloud-1-grad)" opacity="0.70" />
+    <circle cx="322.5" cy="124.4" r="75" fill="url(#hex-cloud-1-grad)" opacity="0.75" />
+    <circle cx="369.3" cy="181.1" r="61.5" fill="url(#hex-cloud-1-grad)" opacity="0.70" />
+  </g>
+  <!-- Modern Geometric Hexagon Boundary Contour -->
+  <polygon points="395,250 322.5,375.6 177.5,375.6 105,250 177.5,124.4 322.5,124.4" fill="none" stroke="rgba(123, 178, 222, 0.7)" stroke-width="2" stroke-dasharray="10 8" opacity="0.65" />
+</svg>
